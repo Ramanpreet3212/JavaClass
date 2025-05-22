@@ -35,7 +35,7 @@ public class Animal {
 		
 	
 	//PROTECTED ACCESS MODIFIER
-	protected String colour="red";
+	/*protected String colour="red";
 	protected int age=50;
 
 protected void jump() {
@@ -63,6 +63,44 @@ public static void main(String[] args) {
 	System.out.println(st);
 	
 		
-}	
+}	*/
+
+//DEFAULT ACCESSMODIFIER
+	
+	 String colour="red";
+	 int age=50;
+	
+	 void jump() {
+		System.out.println("animal jump");
 		
+	}
+	 void eat() {
+		System.out.println("animal eat");
+	}
+	public void test() {
+		
+		jump();//protected method accessible within class
+		System.out.println(colour);
+		System.out.println(age);
+	}
+
+	public static void main(String[] args) {
+		Animal ani=new Animal();
+		ani.jump();
+		ani.test();
+		ani.eat();
+		int age2 = ani.age;
+		System.out.println(age2);
+		String st= ani.colour;
+		System.out.println(st);
+		
+	
+	
+	
+	
+	
+	}
+	
+	
+
 }

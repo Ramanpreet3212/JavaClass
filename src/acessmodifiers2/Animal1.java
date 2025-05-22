@@ -30,7 +30,7 @@ public class Animal1 extends Animal {
 	
 	
 	//PROTECTED ACCESS MODIFIERS
-	public void test() {
+	/*public void test() {
 		System.out.println("testing if protected method or variable accessible for  no same package &  subclass");
 	}
 
@@ -51,7 +51,52 @@ public class Animal1 extends Animal {
 		
 		
 		
+		//PROTECTED ACCESS MODIFIERS
+	/*public void test() {
+		System.out.println("testing if protected method or variable accessible for  no same package &  subclass");
 	}
+
+	
+	public static void main(String[] args) {  
+		
+		Animal1 ann=new Animal1();
+		ann.test();
+		ann.eat();
+		ann.jump();
+		int age2 = ann.age;
+		System.out.println(age2);
+		String st= ann.colour;
+		System.out.println(st);
+		
+		Animal an=new Animal1();
+		an.test();// overridden method working in different pckage 
+		
+	}*/
+	
+	
+	//DEFAULT ACCESS MODIFIERS
+		public void test() {
+			System.out.println("testing if DEFAULT method or variable accessible for  no same package &  subclass");
+		}
+
+		
+		public static void main(String[] args) {  
+			
+			Animal1 ann=new Animal1();
+			ann.test();
+			ann.eat();//NOT ACCESSIBLE
+			ann.jump();
+			int age2 = ann.age;
+			System.out.println(age2);
+			String st= ann.colour;
+			System.out.println(st);
+			
+			Animal an=new Animal1();
+			an.test();// overridden method working in different pckage 
+			
+		}
+	
+	
 	
 	
 	

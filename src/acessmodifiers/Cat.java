@@ -17,7 +17,7 @@ public class Cat {
 		System.out.println(st); */
 		
 	//PROTECTED ACEESS MODIFIER
-	public void test() {
+	/*public void test() {
 		System.out.println("testing if protected method or variable accessible for non subclass within same package");
 	}
 
@@ -31,6 +31,26 @@ public class Cat {
 		System.out.println(age2);
 		String st= ani.colour;
 		System.out.println(st);
+		}*/
+	
+	
+	//DEFAULT ACEESS MODIFIER
+		public void test() {
+			System.out.println("testing if default method or variable accessible for non subclass within same package");
 		}
+
+		
+		public static void main(String[] args) {
+			Animal ani=new Animal();
+			ani.eat();
+			ani.jump();// default   accessible within non subclass, in different package
+			ani.test();
+			int age2 = ani.age;
+			System.out.println(age2);
+			String st= ani.colour;
+			System.out.println(st);
+			}
+	
+	
 	
 }

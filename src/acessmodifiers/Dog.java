@@ -20,7 +20,7 @@ public class Dog extends Animal {
 
 	//PROTECTED ACCESS MODIFIER
 	
-	public void test() {
+	/*public void test() {
 		System.out.println("tested");
 	}
 	
@@ -33,5 +33,34 @@ public class Dog extends Animal {
 		
 		Animal anii= new Dog();
 		anii.test();//overridden method
+}*/
+
+
+//default ACCESS MODIFIER
+	
+	public void test() {
+		System.out.println("tested");
+	}
+	
+	public static void main(String[] args) {
+
+		Animal ani=new Animal();
+		ani.eat();
+		ani.test();
+		ani.jump(); //DEFAULT method can be accessible outside class and child class
+		
+		Animal anii= new Dog();
+		anii.test();//overridden method
 }
+
+
+
+
+
+
+
+
+
+
+
 }
