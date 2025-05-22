@@ -5,14 +5,19 @@ public class switchTwo {
 	public static void main(String[] args) {
 		switchTwo st=new switchTwo();
 		st.dayOfTheWeek("Monday");
+		String sg= st.dayOfTheWeek("Monday");//string as a return statement
+		System.out.println(sg);
 	}
 
-	public void dayOfTheWeek(String dayOfTheWeek) {
+	public String dayOfTheWeek(String dayOfTheWeek) {
+		
+		String statement="null";// if using string as a return statement
 		
 		switch(dayOfTheWeek) {
 		
 		case"Monday":{
 			System.out.println("today is Monday");
+			statement="hurray i found the day";//using string as a return statement
 			break;
 		}
 		case"Tuesday":{
@@ -45,7 +50,7 @@ public class switchTwo {
 		
 		}
 		
-		
+		return statement;
 		
 		
 	}
